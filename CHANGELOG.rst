@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.21
+----
+#. Django 1.9 compatibility.
+#. Python 3 compatibility.
+
+
 0.2
 ---
 #. Django 1.6 compatibility.

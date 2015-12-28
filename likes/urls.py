@@ -1,8 +1,7 @@
-from django.conf.urls import patterns, url
 
+from django.conf.urls import url
+from .views import like
 
-urlpatterns = patterns(
-    'likes.views',
-    url(r'^like/(?P<content_type>[\w-]+)/(?P<id>\d+)/(?P<vote>-?\d+)$', 'like',
-        name='like'),
-)
+urlpatterns = [
+    url(r'^like/(?P<content_type>[\w-]+)/(?P<id>\d+)/(?P<vote>-?\d+)$', like, name='like'),
+]
